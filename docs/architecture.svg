@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="740" viewBox="0 0 1400 740" font-family="Segoe UI,Helvetica,Arial,sans-serif">
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#57606A"/></marker></defs>
+<rect width="1400" height="740" fill="#FFFFFF"/>
+<text x="40" y="45" font-size="18" font-weight="700" fill="#1F2328">agentic-rag-langgraph</text>
+<text x="272" y="45" font-size="15" fill="#57606A">&#8212; retrieval agent that plans, grades its own context, and refuses</text>
+<rect x="300" y="76" width="560" height="500" rx="8" fill="#F6F8FA" stroke="#8250DF" stroke-width="1.3"/>
+<text x="312" y="96" font-size="12" fill="#6E40C9">LangGraph state machine · src/agentic_rag/graph.py</text>
+<rect x="900" y="76" width="460" height="370" rx="8" fill="#F6F8FA" stroke="#0969DA" stroke-width="1.3"/>
+<text x="912" y="96" font-size="12" fill="#0969DA">Retrieval sources · retrieval.py — fused with reciprocal rank fusion</text>
+<rect x="900" y="480" width="460" height="170" rx="8" fill="#FFFFFF" stroke="#8C959F" stroke-width="1.3" stroke-dasharray="6 4"/>
+<text x="912" y="500" font-size="12" fill="#57606A">External services</text>
+<path d="M 270.0 132.0 L 330.0 132.0" fill="none" stroke="#57606A" stroke-width="1.4" marker-end="url(#a)"/>
+<path d="M 435.0 164.0 L 435.0 190.0" fill="none" stroke="#57606A" stroke-width="1.4" marker-end="url(#a)"/>
+<path d="M 435.0 254.0 L 435.0 280.0" fill="none" stroke="#57606A" stroke-width="1.4" marker-end="url(#a)"/>
+<path d="M 435.0 344.0 L 435.0 370.0" fill="none" stroke="#57606A" stroke-width="1.4" marker-end="url(#a)"/>
+<text x="435" y="352" font-size="10" fill="#57606A" text-anchor="middle" paint-order="stroke" stroke="#FFFFFF" stroke-width="3.5">coverage ≥ threshold</text>
+<path d="M 435.0 434.0 L 435.0 460.0" fill="none" stroke="#57606A" stroke-width="1.4" marker-end="url(#a)"/>
+<path d="M 330.0 492.0 L 270.0 492.0" fill="none" stroke="#57606A" stroke-width="1.4" marker-end="url(#a)"/>
+<text x="300" y="487" font-size="10" fill="#57606A" text-anchor="middle" paint-order="stroke" stroke="#FFFFFF" stroke-width="3.5">grounded</text>
+<path d="M 330.0 312.0 L 308.0 312.0 Q 300.0 312.0 300.0 304.0 L 300.0 230.0 Q 300.0 222.0 308.0 222.0 L 330.0 222.0" fill="none" stroke="#57606A" stroke-width="1.4" marker-end="url(#a)"/>
+<text x="300" y="262" font-size="10" fill="#57606A" text-anchor="middle" paint-order="stroke" stroke="#FFFFFF" stroke-width="3.5">gaps · retry</text>
+<path d="M 540.0 132.0 L 737.0 132.0 Q 745.0 132.0 745.0 140.0 L 745.0 280.0" fill="none" stroke="#57606A" stroke-width="1.4" marker-end="url(#a)"/>
+<text x="642" y="127" font-size="10" fill="#57606A" text-anchor="middle" paint-order="stroke" stroke="#FFFFFF" stroke-width="3.5">unaskable</text>
+<path d="M 540.0 312.0 L 640.0 312.0" fill="none" stroke="#57606A" stroke-width="1.4" marker-end="url(#a)"/>
+<text x="590" y="307" font-size="10" fill="#57606A" text-anchor="middle" paint-order="stroke" stroke="#FFFFFF" stroke-width="3.5">no rounds left</text>
+<path d="M 540.0 492.0 L 592.0 492.0 Q 600.0 492.0 600.0 484.0 L 600.0 320.0 Q 600.0 312.0 608.0 312.0 L 640.0 312.0" fill="none" stroke="#57606A" stroke-width="1.4" marker-end="url(#a)"/>
+<text x="600" y="397" font-size="10" fill="#57606A" text-anchor="middle" paint-order="stroke" stroke="#FFFFFF" stroke-width="3.5">hallucinated</text>
+<path d="M 540.0 222.0 L 882.0 222.0 Q 890.0 222.0 890.0 214.0 L 890.0 152.0 Q 890.0 144.0 898.0 144.0 L 930.0 144.0" fill="none" stroke="#57606A" stroke-width="1.4" marker-end="url(#a)"/>
+<text x="715" y="217" font-size="10" fill="#57606A" text-anchor="middle" paint-order="stroke" stroke="#FFFFFF" stroke-width="3.5">fan-out</text>
+<path d="M 540.0 222.0 L 930.0 222.0" fill="none" stroke="#57606A" stroke-width="1.4" marker-end="url(#a)"/>
+<path d="M 540.0 222.0 L 882.0 222.0 Q 890.0 222.0 890.0 230.0 L 890.0 292.0 Q 890.0 300.0 898.0 300.0 L 930.0 300.0" fill="none" stroke="#57606A" stroke-width="1.4" marker-end="url(#a)"/>
+<path d="M 930.0 384.0 L 914.0 384.0 Q 906.0 384.0 906.0 376.0 L 906.0 152.0 Q 906.0 144.0 914.0 144.0 L 930.0 144.0" fill="none" stroke="#57606A" stroke-width="1.4" marker-end="url(#a)"/>
+<path d="M 930.0 384.0 L 924.0 384.0 Q 918.0 384.0 918.0 378.0 L 918.0 228.0 Q 918.0 222.0 924.0 222.0 L 930.0 222.0" fill="none" stroke="#57606A" stroke-width="1.4" marker-end="url(#a)"/>
+<path d="M 1330.0 300.0 L 1344.0 300.0 Q 1352.0 300.0 1352.0 308.0 L 1352.0 540.0 Q 1352.0 548.0 1344.0 548.0 L 1330.0 548.0" fill="none" stroke="#57606A" stroke-width="1.4" marker-end="url(#a)" stroke-dasharray="5 4"/>
+<path d="M 540.0 402.0 L 882.0 402.0 Q 890.0 402.0 890.0 410.0 L 890.0 540.0 Q 890.0 548.0 898.0 548.0 L 930.0 548.0" fill="none" stroke="#57606A" stroke-width="1.4" marker-end="url(#a)" stroke-dasharray="5 4"/>
+<text x="715" y="397" font-size="10" fill="#57606A" text-anchor="middle" paint-order="stroke" stroke="#FFFFFF" stroke-width="3.5">every LLM node</text>
+<path d="M 540.0 492.0 L 862.0 492.0 Q 870.0 492.0 870.0 500.0 L 870.0 604.0 Q 870.0 612.0 878.0 612.0 L 930.0 612.0" fill="none" stroke="#57606A" stroke-width="1.4" marker-end="url(#a)" stroke-dasharray="5 4"/>
+<text x="705" y="487" font-size="10" fill="#57606A" text-anchor="middle" paint-order="stroke" stroke="#FFFFFF" stroke-width="3.5">traces</text>
+<path d="M 270.0 652.0 L 592.0 652.0 Q 600.0 652.0 600.0 644.0 L 600.0 620.0 Q 600.0 612.0 608.0 612.0 L 930.0 612.0" fill="none" stroke="#57606A" stroke-width="1.4" marker-end="url(#a)" stroke-dasharray="5 4"/>
+<text x="435" y="647" font-size="10" fill="#57606A" text-anchor="middle" paint-order="stroke" stroke="#FFFFFF" stroke-width="3.5">scores</text>
+<rect x="40" y="100" width="230" height="64" rx="7" fill="#FFFFFF" stroke="#D0D7DE" stroke-width="1.2"/>
+<g transform="translate(52.0,120.0)"><rect width="24" height="24" rx="5" fill="#1F2328"/><g stroke="#fff" stroke-width="1.7" fill="none"><path d="M6.6 8.6l3.4 3.4-3.4 3.4"/><path d="M12.4 15.8h5"/></g></g>
+<text x="86" y="130" font-size="12.5" font-weight="700" fill="#1F2328">arag CLI</text>
+<text x="86" y="144" font-size="10" fill="#57606A">Typer · ask / index / --json</text>
+<rect x="40" y="460" width="230" height="64" rx="7" fill="#FFFFFF" stroke="#D0D7DE" stroke-width="1.2"/>
+<g transform="translate(52.0,480.0)"><circle cx="12" cy="12" r="11" fill="#1A7F37"/><path d="M7.4 12.4l3 3 6-6.4" stroke="#fff" stroke-width="2.2" fill="none"/></g>
+<text x="86" y="490" font-size="12.5" font-weight="700" fill="#1F2328">Answer + citations</text>
+<text x="86" y="504" font-size="10" fill="#57606A">verbatim quote spans</text>
+<rect x="40" y="620" width="230" height="64" rx="7" fill="#FFFFFF" stroke="#D0D7DE" stroke-width="1.2"/>
+<g transform="translate(52.0,640.0)"><rect width="24" height="24" rx="5" fill="#1A7F37"/><g fill="#fff"><rect x="6" y="12" width="2.8" height="6" rx=".6"/><rect x="10.6" y="8.4" width="2.8" height="9.6" rx=".6"/><rect x="15.2" y="10.4" width="2.8" height="7.6" rx=".6"/></g></g>
+<text x="86" y="650" font-size="12.5" font-weight="700" fill="#1F2328">evals/run_evals.py</text>
+<text x="86" y="664" font-size="10" fill="#57606A">answerable · unaskable · unretrievable</text>
+<rect x="330" y="100" width="210" height="64" rx="7" fill="#FFFFFF" stroke="#D0D7DE" stroke-width="1.2"/>
+<g transform="translate(342.0,120.0)"><rect width="24" height="24" rx="5" fill="#6E40C9"/><g fill="#fff"><circle cx="7" cy="7" r="2.3"/><circle cx="17" cy="7" r="2.3"/><circle cx="12" cy="17" r="2.3"/><path d="M8.6 8.7l2.6 6-1.1.5-2.6-6zm6.8 0l-2.6 6 1.1.5 2.6-6z"/></g></g>
+<text x="376" y="130" font-size="12.5" font-weight="700" fill="#1F2328">plan</text>
+<text x="376" y="144" font-size="10" fill="#57606A">QueryPlan · ≤ 4 sub-questions</text>
+<rect x="330" y="190" width="210" height="64" rx="7" fill="#FFFFFF" stroke="#D0D7DE" stroke-width="1.2"/>
+<g transform="translate(342.0,210.0)"><rect width="24" height="24" rx="5" fill="#0969DA"/><g stroke="#fff" stroke-width="2" fill="none"><circle cx="11" cy="10.6" r="4.2"/><path d="M14.2 13.8l3.4 3.4"/></g></g>
+<text x="376" y="220" font-size="12.5" font-weight="700" fill="#1F2328">retrieve</text>
+<text x="376" y="234" font-size="10" fill="#57606A">fan-out per sub-question</text>
+<rect x="330" y="280" width="210" height="64" rx="7" fill="#FFFFFF" stroke="#D0D7DE" stroke-width="1.2"/>
+<g transform="translate(342.0,300.0)"><rect width="24" height="24" rx="5" fill="#BF8700"/><g fill="#fff"><rect x="4.6" y="7" width="2.4" height="10" rx=".6"/><rect x="17" y="7" width="2.4" height="10" rx=".6"/><rect x="7.6" y="10.8" width="8.8" height="2.4" rx=".6"/></g></g>
+<text x="376" y="310" font-size="12.5" font-weight="700" fill="#1F2328">grade</text>
+<text x="376" y="324" font-size="10" fill="#57606A">ContextGrade · sufficiency score</text>
+<rect x="330" y="370" width="210" height="64" rx="7" fill="#FFFFFF" stroke="#D0D7DE" stroke-width="1.2"/>
+<g transform="translate(342.0,390.0)"><rect width="24" height="24" rx="5" fill="#F6F8FA" stroke="#D0D7DE"/><g fill="#57606A"><path d="M8 6h5.4l3.6 3.6V18a1 1 0 0 1-1 1H8a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1z" fill="#fff" stroke="#57606A" stroke-width="1.1"/><path d="M9.4 12.4h5.2v1H9.4zm0 2.6h5.2v1H9.4zm0-5.2h3v1h-3z"/></g></g>
+<text x="376" y="400" font-size="12.5" font-weight="700" fill="#1F2328">answer</text>
+<text x="376" y="414" font-size="10" fill="#57606A">Answer + citations</text>
+<rect x="330" y="460" width="210" height="64" rx="7" fill="#FFFFFF" stroke="#D0D7DE" stroke-width="1.2"/>
+<g transform="translate(342.0,480.0)"><rect width="24" height="24" rx="5" fill="#CF222E"/><path d="M12 4l6.4 2.6v5c0 3.6-2.7 6.6-6.4 7.8-3.7-1.2-6.4-4.2-6.4-7.8v-5z" fill="#fff"/><path d="M9.4 12.2l1.8 1.9 3.6-3.9" stroke="#CF222E" stroke-width="1.8" fill="none"/></g>
+<text x="376" y="490" font-size="12.5" font-weight="700" fill="#1F2328">verify</text>
+<text x="376" y="504" font-size="10" fill="#57606A">groundedness pass</text>
+<rect x="640" y="280" width="210" height="64" rx="7" fill="#FFFFFF" stroke="#D0D7DE" stroke-width="1.2"/>
+<g transform="translate(652.0,300.0)"><rect width="24" height="24" rx="5" fill="#BF8700"/><g fill="#fff"><rect x="4.6" y="7" width="2.4" height="10" rx=".6"/><rect x="17" y="7" width="2.4" height="10" rx=".6"/><rect x="7.6" y="10.8" width="8.8" height="2.4" rx=".6"/></g></g>
+<text x="686" y="310" font-size="12.5" font-weight="700" fill="#1F2328">refuse</text>
+<text x="686" y="324" font-size="10" fill="#57606A">missing evidence + partial findings</text>
+<rect x="930" y="112" width="400" height="64" rx="7" fill="#FFFFFF" stroke="#D0D7DE" stroke-width="1.2"/>
+<g transform="translate(942.0,132.0)"><rect width="24" height="24" rx="5" fill="#8250DF"/><g fill="#fff"><circle cx="8.4" cy="8.6" r="2.1"/><circle cx="15.6" cy="8.6" r="2.1"/><circle cx="12" cy="15.4" r="2.1"/><circle cx="12" cy="11" r="1.5"/><path d="M9.8 9.6l1.5 1-.6.9-1.5-1zm4.4 0l-1.5 1 .6.9 1.5-1zm-2.2 3.1h.9v1.4h-.9z"/></g></g>
+<text x="976" y="142" font-size="12.5" font-weight="700" fill="#1F2328">vector</text>
+<text x="976" y="156" font-size="10" fill="#57606A">fastembed / BGE-small — hashing TF-IDF fallback</text>
+<rect x="930" y="190" width="400" height="64" rx="7" fill="#FFFFFF" stroke="#D0D7DE" stroke-width="1.2"/>
+<g transform="translate(942.0,210.0)"><rect width="24" height="24" rx="5" fill="#0969DA"/><g stroke="#fff" stroke-width="2" fill="none"><circle cx="11" cy="10.6" r="4.2"/><path d="M14.2 13.8l3.4 3.4"/></g></g>
+<text x="976" y="220" font-size="12.5" font-weight="700" fill="#1F2328">lexical</text>
+<text x="976" y="234" font-size="10" fill="#57606A">BM25 (rank_bm25)</text>
+<rect x="930" y="268" width="400" height="64" rx="7" fill="#FFFFFF" stroke="#D0D7DE" stroke-width="1.2"/>
+<g transform="translate(942.0,288.0)"><rect width="24" height="24" rx="5" fill="#0969DA"/><path d="M8.2 17.4a3.6 3.6 0 0 1-.4-7.2 4.6 4.6 0 0 1 8.7 1.1 3.1 3.1 0 0 1-.6 6.1z" fill="#fff"/></g>
+<text x="976" y="298" font-size="12.5" font-weight="700" fill="#1F2328">web</text>
+<text x="976" y="312" font-size="10" fill="#57606A">Claude server-side web_search tool</text>
+<rect x="930" y="356" width="400" height="56" rx="7" fill="#FFFFFF" stroke="#D0D7DE" stroke-width="1.2"/>
+<g transform="translate(942.0,372.0)"><rect width="24" height="24" rx="5" fill="#F6F8FA" stroke="#D0D7DE"/><g fill="#57606A"><path d="M8 6h5.4l3.6 3.6V18a1 1 0 0 1-1 1H8a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1z" fill="#fff" stroke="#57606A" stroke-width="1.1"/><path d="M9.4 12.4h5.2v1H9.4zm0 2.6h5.2v1H9.4zm0-5.2h3v1h-3z"/></g></g>
+<text x="976" y="382" font-size="12.5" font-weight="700" fill="#1F2328">data/ corpus (Markdown)</text>
+<text x="976" y="396" font-size="10" fill="#57606A">chunked at load</text>
+<rect x="930" y="516" width="400" height="64" rx="7" fill="#FFFFFF" stroke="#D0D7DE" stroke-width="1.2"/>
+<g transform="translate(942.0,536.0)"><rect width="24" height="24" rx="5" fill="#8250DF"/><g fill="#fff"><circle cx="8.4" cy="8.6" r="2.1"/><circle cx="15.6" cy="8.6" r="2.1"/><circle cx="12" cy="15.4" r="2.1"/><circle cx="12" cy="11" r="1.5"/><path d="M9.8 9.6l1.5 1-.6.9-1.5-1zm4.4 0l-1.5 1 .6.9 1.5-1zm-2.2 3.1h.9v1.4h-.9z"/></g></g>
+<text x="976" y="546" font-size="12.5" font-weight="700" fill="#1F2328">Anthropic API — claude-opus-5</text>
+<text x="976" y="560" font-size="10" fill="#57606A">structured output on every node</text>
+<rect x="930" y="580" width="400" height="64" rx="7" fill="#FFFFFF" stroke="#D0D7DE" stroke-width="1.2"/>
+<g transform="translate(942.0,600.0)"><rect width="24" height="24" rx="5" fill="#1A7F37"/><g fill="#fff"><rect x="6" y="12" width="2.8" height="6" rx=".6"/><rect x="10.6" y="8.4" width="2.8" height="9.6" rx=".6"/><rect x="15.2" y="10.4" width="2.8" height="7.6" rx=".6"/></g></g>
+<text x="976" y="610" font-size="12.5" font-weight="700" fill="#1F2328">LangSmith</text>
+<text x="976" y="624" font-size="10" fill="#57606A">1 span per LLM node + per retriever</text>
+<text x="700" y="710" font-size="10" fill="#57606A" text-anchor="middle">solid = request / data flow   ·   dashed = external API call &amp; tracing   ·   three distinct refusal paths converge on refuse</text>
+</svg>

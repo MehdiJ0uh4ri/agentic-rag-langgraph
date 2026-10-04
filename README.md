@@ -1,5 +1,7 @@
 # Agentic RAG with LangGraph
 
+![Agentic RAG with LangGraph](docs/agentic%20rag%20with%20langgraph.jpg)
+
 A retrieval agent that **decomposes** a query into sub-questions, **retrieves** each one
 from multiple sources, **grades its own context**, and **refuses** when the evidence is
 not there — instead of producing a fluent guess. Every LLM and retriever call is traced
@@ -10,6 +12,14 @@ Model: `claude-opus-5` throughout, at three effort levels (planning and answerin
 `high`, grading at `low`). Adaptive thinking is on everywhere.
 
 ---
+
+## Architecture
+
+![Architecture](docs/architecture.svg)
+
+Source: [docs/architecture.drawio](docs/architecture.drawio). You can open or edit it at
+[app.diagrams.net](https://app.diagrams.net) or in the VS Code *Draw.io Integration*
+extension. After editing, export it over `docs/architecture.svg` (File → Export as → SVG).
 
 ## The graph
 
